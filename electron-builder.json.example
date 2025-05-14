@@ -1,0 +1,17 @@
+{
+  "appId": "com.siunusdev.taselamm",
+  "productName": "Tasela MM",
+  "directories": {
+    "buildResources": "assets"
+  },
+  "files": ["src/**/*", "assets/**/*"],
+  "win": {
+    "icon": "assets/favicon.ico",
+    "target": ["nsis", "portable"]
+  },
+  "linux": {
+    "icon": "assets/icon.png",
+    "target": ["AppImage", "deb"],
+    "category": "Utility"
+  }
+}

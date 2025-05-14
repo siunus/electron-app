@@ -1,0 +1,20 @@
+{
+  "name": "electron-app",
+  "version": "2.1.0",
+  "description": "Electron App",
+  "license": "ISC",
+  "author": "siunusdev <yunuz.wap@gmail.com>",
+  "homepage": "https://www.siunusdev.com",
+  "type": "module",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win",
+    "build:linux": "electron-builder --linux",
+    "build:mac": "electron-builder --mac"
+  },
+  "devDependencies": {
+    "electron": "^36.2.0",
+    "electron-builder": "^26.0.12"
+  }
+}

@@ -1,0 +1,4 @@
+dist
+node_modules
+src/config.json
+electron-builder.json
