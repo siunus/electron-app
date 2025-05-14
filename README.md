@@ -59,7 +59,7 @@ cp electron-builder.json.example electron-builder.json
 
 ### 8. Set up `electron-builder.json` for building
 
-Create or update `electron-builder.json` in the root directory with the following:
+Update `electron-builder.json` in the root directory with the following:
 
 ```json
 {
