@@ -27,10 +27,10 @@ npm install
 ### 4. Copy the example configuration file
 
 ```bash
-cp config.json.example config.json
+cp src/config.json.example src/config.json
 ```
 
-### 5. Update the `config.json` file
+### 5. Update the `src/config.json` file
 
 ```json
 {
