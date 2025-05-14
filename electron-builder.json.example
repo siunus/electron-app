@@ -1,6 +1,6 @@
 {
-  "appId": "com.siunusdev.taselamm",
-  "productName": "Tasela MM",
+  "appId": "com.example.myapp",
+  "productName": "My App",
   "directories": {
     "buildResources": "assets"
   },
