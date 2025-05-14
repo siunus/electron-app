@@ -99,3 +99,22 @@ npm run build:mac     # Build for macOS
 ## 📁 Output
 
 ### 10. Built files will be available in the `dist/` directory
+---
+
+## 🎨 Optional: Change Application Icons
+
+You can customize the icons used in the build process:
+
+- **Windows icon**: Replace `assets/favicon.ico` with your `.ico` file (recommended size: 256x256).
+- **Linux icon**: Replace `assets/icon.png` with a `.png` file (recommended size: 512x512).
+
+Ensure the filenames and paths match those defined in `electron-builder.json`:
+
+```json
+"win": {
+  "icon": "assets/favicon.ico"
+},
+"linux": {
+  "icon": "assets/icon.png"
+}
+```
