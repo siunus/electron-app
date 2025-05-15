@@ -13,5 +13,10 @@
     "icon": "assets/icon.png",
     "target": ["AppImage", "deb"],
     "category": "Utility"
+  },
+  "mac": {
+    "icon": "assets/icon.icns",
+    "target": ["dmg", "zip"],
+    "category": "public.app-category.utilities"
   }
 }
