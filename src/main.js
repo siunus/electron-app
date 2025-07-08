@@ -1,8 +1,8 @@
-import { app, BrowserWindow, session, ipcMain } from "electron";
-import { fileURLToPath } from "url";
+import { app, BrowserWindow, ipcMain, session } from "electron";
 import { readFileSync } from "fs";
-import path from "path";
 import http from "http";
+import path from "path";
+import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -16,7 +16,7 @@ function tryLocalFirst() {
   const { localAddress, publicAddress } = config;
 
   return new Promise((resolve) => {
-    const req = http.get(`${localAddress}/ping.php`, (res) => {
+    const req = http.get(localAddress, (res) => {
       if (res.statusCode === 200) {
         resolve(localAddress);
       } else {
