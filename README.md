@@ -107,6 +107,7 @@ You can customize the icons used in the build process:
 
 - **Windows icon**: Replace `assets/favicon.ico` with your `.ico` file (recommended size: 256x256).
 - **Linux icon**: Replace `assets/icon.png` with a `.png` file (recommended size: 512x512).
+- **macOS icon**: Replace `assets/icon.icns` with your `.icns` file (recommended size: 512x512 or 1024x1024). You can use tools like [iconutil](https://ss64.com/osx/iconutil.html) or online converters to create a `.icns` file from PNG images.
 
 Ensure the filenames and paths match those defined in `electron-builder.json`:
 
@@ -116,5 +117,8 @@ Ensure the filenames and paths match those defined in `electron-builder.json`:
 },
 "linux": {
   "icon": "assets/icon.png"
+},
+"mac": {
+  "icon": "assets/icon.icns"
 }
 ```
