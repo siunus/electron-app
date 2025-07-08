@@ -77,6 +77,11 @@ Update `electron-builder.json` in the root directory with the following:
     "icon": "assets/icon.png",
     "target": ["AppImage", "deb"],
     "category": "Utility"
+  },
+  "mac": {
+    "icon": "assets/icon.icns",
+    "target": ["dmg", "zip"],
+    "category": "public.app-category.utilities"
   }
 }
 ```
